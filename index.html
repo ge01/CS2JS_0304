@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <title>Test Average</title>
+    <meta charset="utf-8">
+    <!-- Bootstrap 3 is mobile-first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!---->
+    <div class="container">
+      <h2>Test Average</h2>
+      <form>
+        <div class="form-group">
+          <label for="test1">Test 1:</label>
+          <input id="test1" type="number" onclick="computeTestAvg" placeholder="Enter test grade 1" />
+        </div>
+        <div class="form-group">
+          <label for="test2">Test 2:</label>
+          <input id="test2" type="number" onclick="computeTestAvg" placeholder="Enter test grade 2" />
+        </div>
+        <div class="form-group">
+          <label for="test3">Test 3:</label>
+          <input id="test3" type="number" onclick="computeTestAvg" placeholder="Enter test grade 3" />
+        </div>
+        <button id="myBtn" type="button" class="btn btn-default">Calculate Average</button>
+      </form>
+    </div>
+
+    <h2 id="outTestAvg"></h2>
+
+    <!-- NOTE: This tag connects the JS to our HTML-->
+    <script src="app.js"></script>
+  </body>
+</html>
